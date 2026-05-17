@@ -23,7 +23,7 @@ export default function Home() {
       <div className="nav-wrap">
         <div className="container nav">
           <div className="nav-left">
-            <img src="/emmaboekt-logo.webp" alt="EmmaBoekt" />
+            <a href="#top"><img src="/emmaboekt-logo.webp" alt="EmmaBoekt" style={{height:57}} /></a>
           </div>
           <nav className="nav-links">
             <a href="#oplossing">Product</a>
@@ -33,8 +33,7 @@ export default function Home() {
             <a href="#faq">Vragen</a>
           </nav>
           <div className="nav-right">
-            <a className="signin" href="#">Inloggen</a>
-            <a className="btn btn-cta" href="#cta">Probeer gratis</a>
+            <a className="btn btn-cta" href="#cta">Join de wachtlijst</a>
           </div>
         </div>
       </div>
@@ -51,7 +50,7 @@ export default function Home() {
             <p className="hero-sub">Jouw boekhoudpakket is de motor. Emma is de stuurknop. Stuur haar een factuur, een idee of een vraag. Zij regelt het in Moneybird, e‑Boekhouden, Yuki of welk pakket je gebruikt.</p>
             <div className="hero-cta-row">
               <a href="#oplossing" className="btn btn-cta">Zie Emma in actie ↓</a>
-              <a href="#prijs" className="btn btn-ghost">Wat kost het?</a>
+              <a href="#cta" className="btn btn-ghost">Join de wachtlijst</a>
             </div>
             <div className="hero-trust">
               <div className="stars">★★★★★</div>
@@ -502,10 +501,8 @@ export default function Home() {
             <div>
               <h5>EmmaCorp</h5>
               <ul>
-                <li><a href="#">EmmaVindt</a></li>
-                <li><a href="#">EmmaRegelt</a></li>
-                <li><a href="#">Over ons</a></li>
-                <li><a href="#">Werken bij</a></li>
+                <li><a href="https://www.toms-ambitie.nl/" target="_blank" rel="noopener noreferrer">Over ons</a></li>
+                <li><a href="https://www.toms-ambitie.nl/meebouwen" target="_blank" rel="noopener noreferrer">Werken bij</a></li>
               </ul>
             </div>
             <div>
@@ -514,12 +511,12 @@ export default function Home() {
                 <li><a href="#">Help & docs</a></li>
                 <li><a href="#">Privacy & API</a></li>
                 <li><a href="#">Status</a></li>
-                <li><a href="mailto:hallo@emmaboekt.nl">hallo@emmaboekt.nl</a></li>
+                <li><a href="mailto:hallo@toms-ambitie.nl">hallo@toms-ambitie.nl</a></li>
               </ul>
             </div>
           </div>
           <div className="foot-bottom">
-            <div>© 2026 EmmaCorp B.V. · KvK 12345678</div>
+            <div>© 2026 EmmaCorp B.V. · KvK 70590907</div>
             <div className="made">Boekhouden zonder gedoe. Emma doet het voor je.</div>
           </div>
         </div>
