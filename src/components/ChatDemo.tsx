@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, Fragment } from 'react'
 
 const Spark = ({ size = 14 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" style={{flexShrink:0}}>
@@ -154,7 +154,10 @@ function DocPreview({ doc }: { doc: Doc }) {
       </div>
       <div className="dp-rows">
         {doc.rows.map(([k, v], i) => (
-          <span key={i}>{k}<b>{v}</b></span>
+          <Fragment key={i}>
+            <span>{k}</span>
+            <b>{v}</b>
+          </Fragment>
         ))}
       </div>
       {doc.status && <div className="dp-status">● {doc.status}</div>}
