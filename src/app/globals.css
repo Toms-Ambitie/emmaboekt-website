@@ -441,3 +441,108 @@ footer { background: #07151f; color: rgba(255,255,255,0.55); padding: 60px 0 32p
 .foot-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 12px; }
 .foot-bottom .made { color: rgba(255,255,255,0.4); }
 .icon { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; }
+
+/* ===== MOBIELE OPTIMALISATIES ===== */
+
+html, body { overflow-x: hidden; max-width: 100%; }
+
+/* NAV */
+@media (max-width: 560px) {
+  .nav { gap: 12px; }
+  .nav .btn { padding: 10px 14px; font-size: 13px; }
+}
+
+/* SECTION PADDING */
+@media (max-width: 768px) {
+  section { padding: 56px 0; }
+  .hero { padding: 32px 0 48px; }
+  .compare { padding: 56px 0; }
+  .interface-strip { padding: 40px 0 56px; }
+  .switch { padding-bottom: 64px; }
+  .control { padding: 56px 0; }
+  .integraties { padding: 56px 0; }
+  .faq { padding-bottom: 72px; }
+  .cta-final { padding: 72px 0; }
+}
+
+/* HERO */
+@media (max-width: 768px) {
+  .hero-right { min-height: 0; }
+  .emma-illu { height: 280px; }
+}
+@media (max-width: 560px) {
+  .hero h1 { font-size: clamp(32px, 8vw, 44px); }
+  .hero-sub { font-size: 16px; margin-top: 16px; }
+  .hero-cta-row { flex-direction: column; gap: 10px; }
+  .hero-cta-row .btn { width: 100%; justify-content: center; }
+  .hero-trust { flex-direction: column; gap: 10px; }
+}
+
+/* SECTION HEADS */
+@media (max-width: 560px) {
+  .section-head { margin-bottom: 32px; }
+  .section-head h2 { font-size: clamp(26px, 7vw, 36px); }
+  .section-head p { font-size: 15px; }
+  .compare-head h2 { font-size: clamp(26px, 7vw, 36px); }
+  .istr-head h2 { font-size: clamp(24px, 7vw, 32px); }
+  .switch-head h2 { font-size: clamp(26px, 7vw, 36px); }
+}
+
+/* PAIN CARDS */
+@media (max-width: 560px) {
+  .pain-card { padding: 24px 20px; }
+  .pain-card h3 { font-size: 18px; }
+  .pain-mock { font-size: 11px; }
+  .pain-mock .row { flex-wrap: wrap; gap: 4px; }
+}
+
+/* COMPARE */
+@media (max-width: 560px) {
+  .compare-tag { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .bk-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .compare-stats { flex-wrap: wrap; gap: 10px; }
+}
+
+/* ROI STRIP */
+@media (max-width: 560px) {
+  .roi-strip { padding: 20px 16px; gap: 8px; }
+  .roi-cell .roi-num { font-size: 22px; }
+  .roi-cell .roi-lbl { font-size: 11px; }
+}
+
+/* CHAT DEMO */
+@media (max-width: 560px) {
+  .tab-bar { flex-wrap: wrap; border-radius: 14px; }
+  .tab { font-size: 13px; padding: 8px 14px; }
+  .app-shell { min-height: 420px; }
+  .chat-window { min-height: 380px; }
+  .chip { font-size: 12px; padding: 6px 10px; }
+}
+
+/* STEPS */
+@media (max-width: 560px) {
+  .step { padding: 24px 20px; }
+  .step h3 { font-size: 18px; }
+  .step::before { font-size: 36px; }
+}
+
+/* PRICING */
+@media (max-width: 560px) {
+  .price-card { padding: 24px 20px; }
+  .price-card .amt { font-size: 34px; }
+}
+
+/* CTA FINAL */
+@media (max-width: 560px) {
+  .signup-form { flex-direction: column; gap: 8px; }
+  .signup-form input { padding: 14px; border-radius: 10px; }
+  .signup-form button { width: 100%; padding: 14px; border-radius: 10px; }
+  .cta-final h2 { font-size: clamp(32px, 8vw, 48px); }
+  .signup-trust { gap: 10px; }
+}
+
+/* FOOTER */
+@media (max-width: 480px) {
+  .foot-grid { grid-template-columns: 1fr; gap: 24px; }
+  .foot-bottom { flex-direction: column; gap: 4px; }
+}
