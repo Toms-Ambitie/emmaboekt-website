@@ -23,7 +23,7 @@ export default function Home() {
       <div className="nav-wrap">
         <div className="container nav">
           <div className="nav-left">
-            <a href="#top"><img src="/emmaboekt-logo.webp" alt="EmmaBoekt" style={{height:57}} /></a>
+            <a href="#top"><img src="/emmaboekt-logo.webp" alt="EmmaBoekt" style={{height:85}} /></a>
           </div>
           <nav className="nav-links">
             <a href="#oplossing">Product</a>
